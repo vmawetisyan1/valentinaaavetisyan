@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="hy">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Վալենտինա Ավետիսյան — Իմ աշխարհը</title>
+  <style>
+    * { 
+      margin: 0; 
+      padding: 0; 
+      box-sizing: border-box; 
+    }
+    body {
+      font-family: system-ui, -apple-system, sans-serif;
+      background: linear-gradient(135deg, #f0f4ff, #e8f0ff, #f5faff);
+      color: #222;
+      line-height: 1.6;
+    }
+    header {
+      background: linear-gradient(to right, #6b9eff, #4d8aff);
+      color: white;
+      text-align: center;
+      padding: 60px 20px 40px;
+      position: relative;
+      overflow: hidden;
+    }
+    header h1 { 
+      font-size: 3.2rem; 
+      margin-bottom: 10px; 
+      text-shadow: 2px 2px 8px rgba(0,0,0,0.25); 
+    }
+    header p { 
+      font-size: 1.4rem; 
+      opacity: 0.95; 
+    }
+    main { 
+      max-width: 900px; 
+      margin: -60px auto 40px; 
+      padding: 0 20px; 
+    }
+    section {
+      background: white;
+      border-radius: 16px;
+      padding: 32px;
+      margin-bottom: 30px;
+      box-shadow: 0 10px 30px rgba(0,0,0,0.08);
+    }
+    h2 { 
+      color: #3b82f6; 
+      font-size: 2.1rem; 
+      margin-bottom: 20px; 
+      border-bottom: 3px solid #bfdbfe; 
+      padding-bottom: 10px; 
+    }
+    .about p { 
+      font-size: 1.15rem; 
+      margin-bottom: 1.2em; 
+    }
+    .hobbies {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      gap: 20px;
+      margin-top: 25px;
+    }
+    .card {
+      background: #f0f7ff;
+      border-radius: 12px;
+      padding: 20px;
+      text-align: center;
+      transition: transform 0.3s, box-shadow 0.3s;
+    }
+    .card:hover {
+      transform: translateY(-8px);
+      box-shadow: 0 15px 35px rgba(59,130,246,0.18);
+    }
+    .card img {
+      width: 100%;
+      height: 180px;
+      object-fit: cover;
+      border-radius: 10px;
+      margin-bottom: 12px;
+    }
+    .card h3 { 
+      color: #2563eb; 
+      margin-bottom: 8px; 
+    }
+    footer {
+      text-align: center;
+      padding: 30px;
+      color: #666;
+      font-size: 0.95rem;
+      border-top: 1px solid #e5efff;
+      margin-top: 40px;
+    }
+    @media (max-width: 600px) {
+      header h1 { font-size: 2.4rem; }
+      header { padding: 50px 15px 30px; }
+      section { padding: 24px; }
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>Վալենտինա Ավետիսյան</h1>
+    <p>Կատուներ, շաուրմա, ֆիլմեր և մի քիչ կախարդանք</p>
+  </header>
+
+  <main>
+    <section class="about">
+      <h2>Բարև, ես Վալենտինան եմ 🌸</h2>
+      <p>Ես սովորում եմ Երևանի <strong>Միսաք Մեծարենցի անվան հիմնական դպրոցում</strong>։</p>
+      <p>Հաճախում եմ <strong>Արմաթ լաբորատորիա</strong>, որտեղ շատ հետաքրքիր բաներ եմ սովորում և ընկերներ ձեռք բերում։</p>
+      <p>Ես սիրում եմ ծիծաղել, համտեսել համեղ բաներ և դիտել հետաքրքիր ֆիլմեր մինչև ուշ գիշեր (միայն գաղտնի ասա 😄)</p>
+    </section>
+
+    <section>
+      <h2>Իմ սիրելի բաները</h2>
+      <div class="hobbies">
+        <div class="card">
+          <img src="https://www.rd.com/wp-content/uploads/2024/06/50-Photos-of-Cute-Kittens-That-Will-Make-You-Melt_GettyImages-187144066_SSedit_FT.jpg?w=1800&q=75" alt="Շատ սրամիտ կատվիկներ">
+          <h3>Կատուներ 😻</h3>
+          <p>Ամեն օր պետք է մի կատվի հետ խաղալ կամ գոնե նայել նրանց նկարներին</p>
+        </div>
+
+        <div class="card">
+          <img src="https://thumbs.dreamstime.com/b/grilled-lamb-shawarma-wrap-fries-sauce-served-french-creamy-herb-plate-425466794.jpg" alt="Համեղ շաուրմա">
+          <h3>Շաուրմա 🌯</h3>
+          <p>Ամենալավը՝ լավաշի մեջ, շատ սոուսով և կարտոֆիլ ֆրիով կողքին</p>
+        </div>
+
+        <div class="card">
+          <img src="https://thumbs.dreamstime.com/b/family-movie-night-home-popcorn-television-cozy-family-movie-night-scene-featuring-three-people-enjoying-film-437345989.jpg" alt="Ֆիլմերի երեկո">
+          <h3>Ֆիլմեր դիտել 🎬</h3>
+          <p>Ռոմանտիկ, կատակերգություն, ֆանտաստիկա… գլխավորն է, որ հետաքրքիր լինի</p>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <p>2026 • Վալենտինա Ավետիսյան ★</p>
+  </footer>
+
+</body>
+</html>
